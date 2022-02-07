@@ -12,6 +12,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
 a{
   padding: 20px;
+}
+
+span.material-icons{
+  padding:20px;
 }
