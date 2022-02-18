@@ -8,8 +8,7 @@ export default function App() {
   return (
     <div>
       <Navbar />
-      <Saludo nombre="Juan Sebastian" ciudad="Bogota"/><br/>
-      <CartItem Max_Permitido="5"/>
+      <Saludo nombre="Fernando Galdós" ciudad="Bogota"/><br/>
       
     </div>
 );

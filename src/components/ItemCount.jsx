@@ -1,5 +1,4 @@
 import react, {useState} from "react";
-import App from "../App";
 
 const CartItem = ({Max_Permitido}) => {    
     const [Contador, SetContador] = useState(0)
