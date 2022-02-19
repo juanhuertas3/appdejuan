@@ -8,17 +8,17 @@ const Producto = [
     {precio:"desde $50.000"},
 ]
 
-const promesa = new Promise((resolve, reject)=>{
+const lapromesa = new Promise((resolve, reject)=>{
     setTimeout(() =>{
         resolve(Producto)
     }, 2000)
 })
 
-promesa.then(resultado=>{
+lapromesa.then(resultado=>{
     console.log(resultado)
     return resultado
 }, error=>{
     console.log('Error', error)
 })
 
-export default promesa;
+export default lapromesa;
