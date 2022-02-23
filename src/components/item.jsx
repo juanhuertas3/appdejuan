@@ -1,24 +1,11 @@
 import react from "react";
 
-const Producto = [
-    {id:"camisa-hombre"},
-    {titulo:"camisa de seda para hombre"},
-    {descripcion:"Camisa de seda de excelente calidad, con estampado personalizado en multiples colores"},
-    {talla:"s, m, l, xl"},
-    {precio:"desde $50.000"},
+const Articulo = [ 
+    {id:"2021565", 
+    titulo:"camisa de seda para hombre", 
+    descripcion:"Camisa de seda de excelente calidad, con estampado personalizado en multiples colores", 
+    talla:"s, m, l, xl", 
+    precio:"desde $50.000"},
 ]
 
-const lapromesa = new Promise((resolve, reject)=>{
-    setTimeout(() =>{
-        resolve(Producto)
-    }, 2000)
-})
-
-lapromesa.then(resultado=>{
-    console.log(resultado)
-    return resultado
-}, error=>{
-    console.log('Error', error)
-})
-
-export default lapromesa;
+export default Articulo;
