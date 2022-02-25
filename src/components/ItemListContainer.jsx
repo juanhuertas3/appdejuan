@@ -1,7 +1,7 @@
 import React from "react";
 import AgregarItem from "./ItemList";
 
-const Saludo =({nombre, ciudad})=>{
+const Itemlist =({nombre, ciudad})=>{
     return(
         <React.Fragment>
         <div>
@@ -13,4 +13,4 @@ const Saludo =({nombre, ciudad})=>{
     )
 }
 
-export default Saludo;
+export default Itemlist;

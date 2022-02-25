@@ -13,8 +13,7 @@ const CartItem = ({Max_Permitido}) => {
 
     return (
         <react.Fragment>                    
-        <h4>Se nos ha solicitado crear un contador que incremente o reduzca la cantidad segun el boton donde se de click vamos a ello:</h4><br></br>
-        <h5>La cantidad max permitada es de: {Max_Permitido}</h5> <br></br>
+        <h5>Max permitado es: Max 5 unidades x producto</h5> <br></br>
         <h5>Cuanto llevo en mi Carrito: {Contador}</h5><br></br>
 
         <button id="bottonincrementar" onClick={handleClick} max="5"><a class="waves-effect green darken-1 btn" ><i class="material-icons left">add_circle</i>Agregar elemento</a></button>

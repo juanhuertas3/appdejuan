@@ -1,3 +1,7 @@
+# Se incluyen Algunas modificaciones al proyecto
+
+** Se realiza enrutamiento con BrowserRoute, Routes, Route a los links principales de la selecciones de la pagina. 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

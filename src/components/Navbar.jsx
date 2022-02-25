@@ -1,22 +1,25 @@
 import react from "react";
 import Carticon from "./Cartwidget";
 import './materialize/materialize.css';
+import {link} from "react-router-dom";
 
 const Navbar = () => {
     return (
+      <>
         <nav>
-    <div class="nav-wrapper">
-      <a href="#" class="brand-logo">Logo</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Quienes Somos</a></li>
-        <li><a href="#">Portafolio</a></li>
-        <li><a href="#">Contactenos</a></li>
+    <div className="nav-wrapper">
+      <a href="/" className="brand-logo">Logo</a>
+      <ul id="nav-mobile" className="right hide-on-med-and-down">
+        
+        <li><a href="/">Inicio</a></li>
+        <li><a href="/nosotros">Quienes Somos</a></li>
+        <li><a href="/categorias/:id">Categoria</a></li>
+        <li><a href="/items/:id">Items</a></li>
         <Carticon />
       </ul>      
     </div>
   </nav>
-    )
+  </>)
 }
 
 export default Navbar;
