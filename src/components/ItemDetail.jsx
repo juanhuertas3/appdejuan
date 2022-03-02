@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import CartItem from "./ItemCount"; 
 
 function ItemDetail (){
     const [usuarios, setUsuarios] = useState([]);   
@@ -14,7 +15,7 @@ function ItemDetail (){
         const promesa66 = new Promise((resolve, reject)=>{
             setTimeout(()=>{
                 resolve(item1)
-            }, 3000);
+            }, 2000);
         })
         promesa66.then(resultado =>{
         setUsuarios(resultado);            
@@ -22,13 +23,26 @@ function ItemDetail (){
     },[item1])
     
     return (
-    <>{
+    <>
+    
+    {
         usuarios.map((elemento)=>{
             return(
-                <div>{elemento.id}, {elemento.titulo}, {elemento.descripcion}, {elemento.talla}, {elemento.precio}</div>
+                <div>
+                <strong>ID= {elemento.id},</strong><br></br> 
+                <strong>ombre= {elemento.titulo},</strong><br></br> 
+                <strong>Descripción= {elemento.descripcion},</strong><br></br> 
+                <strong>Talla= {elemento.talla}, </strong><br></br> 
+                <strong>Precio= {elemento.precio}</strong>
+                </div>
             )
-        })
-    }        
+            
+        },
+        
+     )
+    } 
+    <CartItem />        
+    
     </>)
     }
 
