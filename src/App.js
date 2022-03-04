@@ -8,9 +8,11 @@ import {BrowserRouter, Routes, Route } from 'react-router-dom';
 import Inicio from './components/web/inicio';
 import Nosotros from './components/web/nosotros';
 import ItemDetail from './components/ItemDetail';
+import { Cartcontext } from './context/CartContext';
 
 export default function App() {
   return (
+  <Cartcontext.Provider value={[]}>
     <BrowserRouter>
     <Navbar/>
     <Routes>
@@ -21,6 +23,8 @@ export default function App() {
       <Route path="/carrito" element={<CartItem/>}/>
     </Routes>
     
-  </BrowserRouter>  
+    </BrowserRouter>  
+
+  </Cartcontext.Provider>
 )
 }  

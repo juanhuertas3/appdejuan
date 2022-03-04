@@ -30,7 +30,7 @@ function ItemDetail (){
             return(
                 <div>
                 <strong>ID= {elemento.id},</strong><br></br> 
-                <strong>ombre= {elemento.titulo},</strong><br></br> 
+                <strong>Nombre= {elemento.titulo},</strong><br></br> 
                 <strong>Descripción= {elemento.descripcion},</strong><br></br> 
                 <strong>Talla= {elemento.talla}, </strong><br></br> 
                 <strong>Precio= {elemento.precio}</strong>
