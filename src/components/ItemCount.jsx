@@ -1,6 +1,6 @@
 import react, {useState} from "react";
 import { Link } from "react-router-dom";
-import { Cartcontext } from "../context/CartContext";
+import { CartContext } from "../context/CartContext";
 
 const CartItem = ({Max_Permitido}) => {    
     const [Contador, SetContador] = useState(0)
@@ -18,7 +18,7 @@ const CartItem = ({Max_Permitido}) => {
     }
 
     return (
-        <Cartcontext.Provider >
+        <CartContext.Provider >
         <>
 
         <h5>Max permitado es: Max 5 unidades x producto</h5>
@@ -31,7 +31,7 @@ const CartItem = ({Max_Permitido}) => {
         <button onClick={Terminarcompra}><a className="waves-effect blue darken-2 btn">Terminar Mi compra</a></button>
            
         </>
-        </Cartcontext.Provider>
+        </CartContext.Provider>
         )
         }
     export default CartItem;

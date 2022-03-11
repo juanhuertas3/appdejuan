@@ -2,9 +2,12 @@ import react from "react";
 import Carticon from "./Cartwidget";
 import './materialize/materialize.css';
 import {link} from "react-router-dom";
+import { CartContext, CartProvider } from "../context/CartContext";
+import { useContext } from "react/cjs/react.production.min";
 
-const Navbar = () => {
-    return (
+const Navbar = () => { 
+
+  return (
       <>
         <nav>
     <div className="nav-wrapper">
